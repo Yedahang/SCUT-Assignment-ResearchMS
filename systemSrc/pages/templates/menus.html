@@ -1,0 +1,162 @@
+<div class="fater-logo">
+    科研管理系统
+</div>
+<input id="sessionUserType" type="hidden" value="{{ request.session.type }}">
+{% if request.session.type == 0 %}
+<div class="fater-menu-vertical">
+    <div class="fater-menu-item">
+        <a href="/jobs/show/">
+            <span class="fa fa-home"></span> 系统首页
+        </a>
+    </div>
+    <div class="fater-menu-item" >
+        <a href="/jobs/researchRooms/show/" id="researchRoomsMenuItem">
+            <span class="fa fa-building"></span> 研究室信息管理
+        </a>
+    </div>
+        <div class="fater-menu-item">
+        <a href="/jobs/offices/show/" id="officesItem">
+            <span class="fa fa-cc"></span> 办公场地信息管理
+        </a>
+    </div>
+    <div class="fater-menu-item">
+        <a href="/jobs/secretaries/show/" id="secretariesMenuItem">
+            <span class="fa fa-diamond"></span> 秘书信息管理
+        </a>
+    </div>
+    <div class="fater-menu-item">
+        <a href="/jobs/researchers/show/" id="researcherItem">
+            <span class="fa fa-users"></span> 科研人员信息管理
+        </a>
+    </div>
+    <div class="fater-menu-item">
+        <a href="/jobs/projects_participators/show/" id="projects_participatorsItem">
+            <span class="fa fa-deaf"></span> 科研项目管理_参与人员
+        </a>
+    </div>
+    <div class="fater-menu-item">
+        <a href="/jobs/projects/show/" id="projectsItem">
+            <span class="fa fa-deaf"></span> 科研项目管理
+        </a>
+    </div>
+        <div class="fater-menu-item">
+        <a href="/jobs/subprojects/show/" id="subprojectsItem">
+            <span class="fa fa-pencil"></span> 科研项目管理_子课题
+        </a>
+    </div>
+    <div class="fater-menu-item">
+        <a href="/jobs/achievements/show/" id="achievementsItem">
+            <span class="fa fa-paper-plane"></span> 科研项目管理_成果
+        </a>
+    </div>
+    <div class="fater-menu-item">
+        <a href="/jobs/achievements_papers/show/" id="achievements_papersItem">
+            <span class="fa fa-paper-plane"></span> 科研项目管理_论文
+        </a>
+    </div>
+        <div class="fater-menu-item">
+        <a href="/jobs/achievements_patents/show/" id="achievements_patentsItem">
+            <span class="fa fa-paper-plane"></span> 科研项目管理_专利
+        </a>
+    </div>
+        <div class="fater-menu-item">
+        <a href="/jobs/achievements_softwareCopyrights/show/" id="achievements_softwareCopyrightsItem">
+            <span class="fa fa-paper-plane"></span> 科研项目管理_软件著作权
+        </a>
+    </div>
+    <div class="fater-menu-item">
+        <a href="/jobs/contacts/show/" id="contactsItem">
+            <span class="fa fa-pencil"></span> 联系人信息管理
+        </a>
+    </div>
+    <div class="fater-menu-item">
+        <a href="/jobs/organizations/show/" id="organizationsItem">
+            <span class="fa fa-pencil"></span> 单位信息管理
+        </a>
+    </div>
+
+    <div class="fater-menu-item">
+        <a href="/jobs/organization_contacts/show/" id="organization_contactsItem">
+            <span class="fa fa-pencil"></span> 单位相关联系人信息管理
+        </a>
+    </div>
+
+
+<!--    <div class="fater-menu-item">-->
+<!--        <a href="/jobs/directors/show/" id="directorsMenuItem">-->
+<!--            <span class="fa fa-mortar-board"></span> 主任信息管理-->
+<!--        </a>-->
+<!--    </div>-->
+    <div class="fater-menu-item">
+        <a href="/jobs/users/show/">
+            <span class="fa fa-user-o"></span> 管理员信息管理
+        </a>
+    </div>
+<!--    <div class="fater-menu-item">-->
+<!--        <a href="/jobs/projectLogs/show/">-->
+<!--            <span class="fa fa-newspaper-o"></span> 学生项目经历-->
+<!--        </a>-->
+<!--    </div>-->
+</div>
+<!--{% elif  request.session.type == 1 %}-->
+<!--<div class="fater-menu-vertical">-->
+<!--    <div class="fater-menu-item">-->
+<!--        <a href="/jobs/show/">-->
+<!--            <span class="fa fa-home"></span> 系统首页-->
+<!--        </a>-->
+<!--    </div>-->
+<!--    <div class="fater-menu-item">-->
+<!--        <a href="/jobs/jobs/show/">-->
+<!--            <span class="fa fa-diamond"></span> 岗位信息管理-->
+<!--        </a>-->
+<!--    </div>-->
+<!--    <div class="fater-menu-item">-->
+<!--        <a href="/jobs/students/show/">-->
+<!--            <span class="fa fa-users"></span> 学生信息管理-->
+<!--        </a>-->
+<!--    </div>-->
+<!--    <div class="fater-menu-item">-->
+<!--        <a href="/jobs/educationLogs/show/">-->
+<!--            <span class="fa fa-mortar-board"></span> 学生教育经历-->
+<!--        </a>-->
+<!--    </div>-->
+<!--    <div class="fater-menu-item">-->
+<!--        <a href="/jobs/projectLogs/show/">-->
+<!--            <span class="fa fa-newspaper-o"></span> 学生项目经历-->
+<!--        </a>-->
+<!--    </div>-->
+<!--    <div class="fater-menu-item">-->
+<!--        <a href="/jobs/sendLogs/show/">-->
+<!--            <span class="fa fa-paper-plane"></span> 学生投递记录-->
+<!--        </a>-->
+<!--    </div>-->
+<!--</div>-->
+<!--{% elif  request.session.type == 2 %}-->
+<!--<div class="fater-menu-vertical">-->
+<!--    <div class="fater-menu-item">-->
+<!--        <a href="/jobs/show/">-->
+<!--            <span class="fa fa-home"></span> 系统首页-->
+<!--        </a>-->
+<!--    </div>-->
+<!--    <div class="fater-menu-item">-->
+<!--        <a href="/jobs/jobs/show/">-->
+<!--            <span class="fa fa-diamond"></span> 岗位信息浏览-->
+<!--        </a>-->
+<!--    </div>-->
+<!--    <div class="fater-menu-item">-->
+<!--        <a href="/jobs/educationLogs/show/">-->
+<!--            <span class="fa fa-mortar-board"></span> 教育经历设置-->
+<!--        </a>-->
+<!--    </div>-->
+<!--    <div class="fater-menu-item">-->
+<!--        <a href="/jobs/projectLogs/show/">-->
+<!--            <span class="fa fa-newspaper-o"></span> 项目经历设置-->
+<!--        </a>-->
+<!--    </div>-->
+<!--    <div class="fater-menu-item">-->
+<!--        <a href="/jobs/sendLogs/show/">-->
+<!--            <span class="fa fa-paper-plane"></span> 投递记录查看-->
+<!--        </a>-->
+<!--    </div>-->
+<!--</div>-->
+<!--{% endif %}-->

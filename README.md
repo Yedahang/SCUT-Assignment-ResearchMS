@@ -5,12 +5,11 @@
 
 #### 前端界面
 
+![img](assets/clip_image002-1709956649305-15.jpg)
+
 #### Django内置管理界面
 
-<div style="display: flex;">
-  <img src="assets/clip_image002-1709956284071-9.jpg" style="width: 50%;" />
-  <img src="assets/clip_image002-1709956399068-13.jpg" style="width: 50%;" />
-</div>
+
 
 
 
