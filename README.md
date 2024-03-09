@@ -7,23 +7,27 @@
 
 ![399543029ae03268e58eac373eca73c](assets/399543029ae03268e58eac373eca73c.png)
 
+![12321312](assets/12321312.png)
+
 #### Django内置管理界面
 
+![sadsadsadasd](assets/sadsadsadasd.png)
 
-
-
+![111](assets/111.png)
 
 ## 需求分析
 
 #### 需求描述
 
-<img src="assets/clip_image002.gif" alt="img" style="zoom:80%;" />
+![2](assets/2.png)
 
 #### 用例图
 
+
+
 <div style="display: flex;">
-  <img src="assets/clip_image002.jpg" style="width: 50%;" />
-  <img src="assets/clip_image002-1709955939382-3.jpg" style="width: 50%;" />
+  <img src="assets/31.png" style="width: 50%;" />
+  <img src="assets/32.png" style="width: 50%;" />
 </div>
 
 
@@ -48,7 +52,7 @@
 
 #### ER图
 
-![img](assets/clip_image002-1709956146217-7.jpg)
+![123](assets/123.png)
 
 ## 安装运行方法
 
