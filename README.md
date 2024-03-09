@@ -5,7 +5,7 @@
 
 #### 前端界面
 
-![img](assets/clip_image002-1709956649305-15.jpg)
+![399543029ae03268e58eac373eca73c](assets/399543029ae03268e58eac373eca73c.png)
 
 #### Django内置管理界面
 
