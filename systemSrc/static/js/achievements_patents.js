@@ -3,7 +3,7 @@ function handle(){
 	$("button[event=upd]").on("click", (e)=>{
 
         $.ajax({
-            url: "/jobs/achievements_patents/info/",
+            url: "/researchMS/achievements_patents/info/",
             type: "GET",
             async: false,
             data:{
@@ -31,7 +31,7 @@ function handle(){
         $.confirm("确认要删除吗", () =>{
 
             $.ajax({
-                url: "/jobs/achievements_patents/del/",
+                url: "/researchMS/achievements_patents/del/",
                 type: "POST",
                 async: false,
                 data:{
@@ -53,7 +53,7 @@ function handle(){
     $("button[event=cancel]").on("click", (e)=>{
 
         $.ajax({
-            url: "/jobs/achievements_patents/upd/",
+            url: "/researchMS/achievements_patents/upd/",
             type: "POST",
             async: false,
             data:{
@@ -79,7 +79,7 @@ $(function (){
 
     let tableView =  {
         el: "#tableShow",
-        url: "/jobs/achievements_patents/page/",
+        url: "/researchMS/achievements_patents/page/",
         method: "GET",
         where: {
             pageIndex: 1,
@@ -148,7 +148,7 @@ $(function (){
         let formElement = document.forms['addForm'];
         let formData = new FormData(formElement);
         $.ajax({
-            url: "/jobs/achievements_patents/add/",
+            url: "/researchMS/achievements_patents/add/",
             type: "POST",
             data: formData,
             processData: false,// 禁止将数据处理为查询字符串
@@ -171,7 +171,7 @@ $(function (){
         let formElement = document.forms['updForm'];
         let formData = new FormData(formElement);
         $.ajax({
-            url: "/jobs/achievements_patents/upd/",
+            url: "/researchMS/achievements_patents/upd/",
             type: "POST",
             data: formData,
             processData: false,// 禁止将数据处理为查询字符串

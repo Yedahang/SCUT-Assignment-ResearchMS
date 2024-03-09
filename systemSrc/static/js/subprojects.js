@@ -4,7 +4,7 @@ function handle(){
 	$("button[event=upd]").on("click", (e)=>{
 
         $.ajax({
-            url: "/jobs/subprojects/info/",
+            url: "/researchMS/subprojects/info/",
             type: "GET",
             async: false,
             data:{
@@ -32,7 +32,7 @@ function handle(){
         $.confirm("确认要删除吗", () =>{
 
             $.ajax({
-                url: "/jobs/subprojects/del/",
+                url: "/researchMS/subprojects/del/",
                 type: "POST",
                 async: false,
                 data:{
@@ -57,7 +57,7 @@ $(function (){
 
     let tableView =  {
         el: "#tableShow",
-        url: "/jobs/subprojects/page/",
+        url: "/researchMS/subprojects/page/",
         method: "GET",
         where: {
             pageIndex: 1,
@@ -138,7 +138,7 @@ $(function (){
         let formElement = document.forms['addForm'];
         let formData = new FormData(formElement);
         $.ajax({
-            url: "/jobs/subprojects/add/",
+            url: "/researchMS/subprojects/add/",
             type: "POST",
             data: formData,
             processData: false,// 禁止将数据处理为查询字符串
@@ -161,7 +161,7 @@ $(function (){
         let formElement = document.forms['updForm'];
         let formData = new FormData(formElement);
         $.ajax({
-            url: "/jobs/subprojects/upd/",
+            url: "/researchMS/subprojects/upd/",
             type: "POST",
             data: formData,
             processData: false,// 禁止将数据处理为查询字符串

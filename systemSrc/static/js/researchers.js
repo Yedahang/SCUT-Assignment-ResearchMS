@@ -3,7 +3,7 @@ function handle(){
 	$("button[event=upd]").on("click", (e)=>{
 
         $.ajax({
-            url: "/jobs/researchers/info/",
+            url: "/researchMS/researchers/info/",
             type: "GET",
             async: false,
             data:{
@@ -26,7 +26,7 @@ function handle(){
         $.confirm("确认要删除吗", () =>{
 
             $.ajax({
-                url: "/jobs/researchers/del/",
+                url: "/researchMS/researchers/del/",
                 type: "POST",
                 async: false,
                 data:{
@@ -51,7 +51,7 @@ $(function (){
 
     let tableView =  {
         el: "#tableShow",
-        url: "/jobs/researchers/page/",
+        url: "/researchMS/researchers/page/",
         method: "GET",
         where: {
             pageIndex: 1,
@@ -140,7 +140,7 @@ $(function (){
         let formVal = $.getFrom("addForm");
 
         $.ajax({
-            url: "/jobs/researchers/add/",
+            url: "/researchMS/researchers/add/",
             type: "POST",
             data: formVal,
             success: function(res){
@@ -161,7 +161,7 @@ $(function (){
         let formVal = $.getFrom("updForm");
 
         $.ajax({
-            url: "/jobs/researchers/upd/",
+            url: "/researchMS/researchers/upd/",
             type: "POST",
             data: formVal,
             success: function(res){

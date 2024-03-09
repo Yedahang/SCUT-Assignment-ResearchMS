@@ -3,7 +3,7 @@ function handle(){
 	$("button[event=upd]").on("click", (e)=>{
 
         $.ajax({
-            url: "/jobs/researchRooms/info/",
+            url: "/researchMS/researchRooms/info/",
             type: "GET",
             async: false,
             data:{
@@ -40,7 +40,7 @@ function handle(){
         $.confirm("确认要删除吗", () =>{
 
             $.ajax({
-                url: "/jobs/researchRooms/del/",
+                url: "/researchMS/researchRooms/del/",
                 type: "POST",
                 async: false,
                 data:{
@@ -65,7 +65,7 @@ $(function (){
 
     let tableView =  {
         el: "#tableShow",
-        url: "/jobs/researchRooms/page/",
+        url: "/researchMS/researchRooms/page/",
         method: "GET",
         where: {
             pageIndex: 1,
@@ -146,7 +146,7 @@ $(function (){
         let formElement = document.forms['addForm'];
         let formData = new FormData(formElement);
         $.ajax({
-            url: "/jobs/researchRooms/add/",
+            url: "/researchMS/researchRooms/add/",
             type: "POST",
             data: formData,
             processData: false,// 禁止将数据处理为查询字符串
@@ -169,7 +169,7 @@ $(function (){
         let formElement = document.forms['updForm'];
         let formData = new FormData(formElement);
         $.ajax({
-            url: "/jobs/researchRooms/upd/",
+            url: "/researchMS/researchRooms/upd/",
             type: "POST",
             data: formData,
             processData: false,// 禁止将数据处理为查询字符串

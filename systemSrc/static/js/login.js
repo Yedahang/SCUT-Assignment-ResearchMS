@@ -23,13 +23,13 @@ $(function (){
         if(checkForm(loginVal)){
 
             $.ajax({
-                url: "/jobs/login/",
+                url: "/researchMS/login/",
                 type: "POST",
                 data: loginVal,
                 success: function(res){
                     if(res.code == 0){
                     	
-                    	window.location.href="/jobs/show/";
+                    	window.location.href="/researchMS/show/";
                     }else{
                         $.msg("error", res.msg);
                     }

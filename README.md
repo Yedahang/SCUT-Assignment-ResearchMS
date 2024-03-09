@@ -66,6 +66,11 @@
 ## 运行
 
 1. 运行服务器: python manage.py runserver
-2. 进入系统：基于JavaScript和html开发的前端 127.0.0.1:8000/jobs/login
-	基于Django集成开发环境开发的前端  127.0.0.1:8000/admin
+
+2. 进入系统：
+
+  - 前端 127.0.0.1:8000/researchMS/login
+
+  - Django后台管理  127.0.0.1:8000/admin
+
 3. 账号密码在数据库users表中，type字段0为管理员账号，用户名密码默认为admin。

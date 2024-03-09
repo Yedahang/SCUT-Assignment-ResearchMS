@@ -3,7 +3,7 @@ function handle(){
 	$("button[event=upd]").on("click", (e)=>{
 
         $.ajax({
-            url: "/jobs/educationLogs/info/",
+            url: "/researchMS/educationLogs/info/",
             type: "GET",
             async: false,
             data:{
@@ -26,7 +26,7 @@ function handle(){
         $.confirm("确认要删除吗", () =>{
 
             $.ajax({
-                url: "/jobs/educationLogs/del/",
+                url: "/researchMS/educationLogs/del/",
                 type: "POST",
                 async: false,
                 data:{
@@ -124,7 +124,7 @@ $(function (){
 
     let tableView =  {
         el: "#tableShow",
-        url: "/jobs/educationLogs/page/",
+        url: "/researchMS/educationLogs/page/",
         method: "GET",
         where: {
             pageIndex: 1,
@@ -157,7 +157,7 @@ $(function (){
         let formVal = $.getFrom("addForm");
 
         $.ajax({
-            url: "/jobs/educationLogs/add/",
+            url: "/researchMS/educationLogs/add/",
             type: "POST",
             data: formVal,
             success: function(res){
@@ -178,7 +178,7 @@ $(function (){
         let formVal = $.getFrom("updForm");
 
         $.ajax({
-            url: "/jobs/educationLogs/upd/",
+            url: "/researchMS/educationLogs/upd/",
             type: "POST",
             data: formVal,
             success: function(res){

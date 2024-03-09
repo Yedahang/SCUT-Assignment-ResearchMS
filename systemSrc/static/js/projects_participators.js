@@ -3,7 +3,7 @@ function handle(){
 	$("button[event=upd]").on("click", (e)=>{
 
         $.ajax({
-            url: "/jobs/projects_participators/info/",
+            url: "/researchMS/projects_participators/info/",
             type: "GET",
             async: false,
             data:{
@@ -31,7 +31,7 @@ function handle(){
         $.confirm("确认要删除吗", () =>{
 
             $.ajax({
-                url: "/jobs/projects_participators/del/",
+                url: "/researchMS/projects_participators/del/",
                 type: "POST",
                 async: false,
                 data:{
@@ -56,7 +56,7 @@ $(function (){
 
     let tableView =  {
         el: "#tableShow",
-        url: "/jobs/projects_participators/page/",
+        url: "/researchMS/projects_participators/page/",
         method: "GET",
         where: {
             pageIndex: 1,
@@ -140,7 +140,7 @@ $(function (){
         let formData = new FormData(formElement);
 
         $.ajax({
-            url: "/jobs/projects_participators/add/",
+            url: "/researchMS/projects_participators/add/",
             type: "POST",
             data: formData,
             processData: false,  // 禁止将数据处理为查询字符串
@@ -165,7 +165,7 @@ $(function (){
 
 
         $.ajax({
-            url: "/jobs/projects_participators/upd/",
+            url: "/researchMS/projects_participators/upd/",
             type: "POST",
             data: formData,
             processData: false,  // 禁止将数据处理为查询字符串

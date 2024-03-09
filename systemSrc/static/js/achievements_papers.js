@@ -3,7 +3,7 @@ function handle(){
 	$("button[event=upd]").on("click", (e)=>{
 
         $.ajax({
-            url: "/jobs/achievements_papers/info/",
+            url: "/researchMS/achievements_papers/info/",
             type: "GET",
             async: false,
             data:{
@@ -31,7 +31,7 @@ function handle(){
         $.confirm("确认要删除吗", () =>{
 
             $.ajax({
-                url: "/jobs/achievements_papers/del/",
+                url: "/researchMS/achievements_papers/del/",
                 type: "POST",
                 async: false,
                 data:{
@@ -53,7 +53,7 @@ function handle(){
     $("button[event=cancel]").on("click", (e)=>{
 
         $.ajax({
-            url: "/jobs/achievements_papers/upd/",
+            url: "/researchMS/achievements_papers/upd/",
             type: "POST",
             async: false,
             data:{
@@ -78,7 +78,7 @@ $(function (){
 
     let tableView =  {
         el: "#tableShow",
-        url: "/jobs/achievements_papers/page/",
+        url: "/researchMS/achievements_papers/page/",
         method: "GET",
         where: {
             pageIndex: 1,
@@ -147,7 +147,7 @@ $(function (){
         let formElement = document.forms['addForm'];
         let formData = new FormData(formElement);
         $.ajax({
-            url: "/jobs/achievements_papers/add/",
+            url: "/researchMS/achievements_papers/add/",
             type: "POST",
             data: formData,
             processData: false,// 禁止将数据处理为查询字符串
@@ -170,7 +170,7 @@ $(function (){
         let formElement = document.forms['updForm'];
         let formData = new FormData(formElement);
         $.ajax({
-            url: "/jobs/achievements_papers/upd/",
+            url: "/researchMS/achievements_papers/upd/",
             type: "POST",
             data: formData,
             processData: false,// 禁止将数据处理为查询字符串

@@ -8,7 +8,7 @@ $(function (){
     $("#sessionInfo").on("click", () =>{
 
         $.ajax({
-            url: "/jobs/info/",
+            url: "/researchMS/info/",
             type: "GET",
             async: false,
             success: function(res){
@@ -27,7 +27,7 @@ $(function (){
 
         let formVal = $.getFrom("updSessionInfoForm");
         $.ajax({
-            url: "/jobs/info/",
+            url: "/researchMS/info/",
             type: "POST",
             data: formVal,
             async: false,
@@ -48,7 +48,7 @@ $(function (){
     $("#sessionPwd").on("click", () =>{
 
         $.ajax({
-            url: "/jobs/info/",
+            url: "/researchMS/info/",
             type: "GET",
             async: false,
             success: function(res){
@@ -105,7 +105,7 @@ $(function (){
         if(checkForm(formVal)){
 
             $.ajax({
-                url: "/jobs/pwd/",
+                url: "/researchMS/pwd/",
                 type: "POST",
                 data: {
                     password: formVal.newPwd
@@ -130,7 +130,7 @@ $(function (){
 
         $.confirm("确认要退出吗？", () =>{
 
-            window.location.href="/jobs/exit/";
+            window.location.href="/researchMS/exit/";
         });
     });
 });

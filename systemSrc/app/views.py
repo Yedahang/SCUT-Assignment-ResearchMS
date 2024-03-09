@@ -94,7 +94,7 @@ class SysView(BaseView):
             del request.session["user"]
             del request.session["type"]
 
-            return HttpResponseRedirect('/jobs/login')
+            return HttpResponseRedirect('/researchMS/login')
 
         if module == 'info':
 
