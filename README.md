@@ -60,8 +60,9 @@
 
 1. 解压项目，用pycharm打开studentjobs目录。 在pycharm配置python解释器，3.8及以上都可以。可以通过conda或者其他的虚拟环境来安装。
 2. 打开mysql 创建库：CREATE DATABASE `researchms` DEFAULT CHARACTER SET utf8 (如果更换表的名字，请在settings文件里面修改相关配置)
-3. 运行sql语句：INSERT INTO users (user_name, pass_word, name, gender, age, phone, type) VALUES ('admin', 'admin', '张三丰', '男', 45, '9018291092', 0);
-4. 在pycharm终端依次输入python manage.py makemigrations和python manage.py migrate进行表结构迁移
+3. 在pycharm终端依次输入python manage.py makemigrations和python manage.py migrate进行表结构迁移
+4. 运行sql语句：INSERT INTO users (user_name, pass_word, name, gender, age, phone, type) VALUES ('admin', 'admin', '张三丰', '男', 45, '9018291092', 0);
+
 
 ## 运行
 
